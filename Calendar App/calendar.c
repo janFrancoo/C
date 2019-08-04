@@ -91,12 +91,8 @@ void see_month(struct date d){
         printf("\n\n\n\t\t\tPrevious Month (Q) - Next Month(W)\n");
         if(!noteCount)
             printf("\t\t\tAdd Note (A) - Menu(M)\n");
-        if(noteCount == 1){
+        else if(noteCount == 1){
             printf("\t\t\tSee Notes (S) - 1 Note In This Month\n");
-            printf("\t\t\tAdd Note (A) - Menu(M)\n");
-        }
-        if(noteCount == -1){
-            printf("\t\t\tSee Notes (S) - 0 Note In This Month\n");
             printf("\t\t\tAdd Note (A) - Menu(M)\n");
         }
         else{
