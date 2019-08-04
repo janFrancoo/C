@@ -205,16 +205,14 @@ void add_note(int month, int year){
 }
 
 int days_of_month(int month, int year){
-    if((month - 1) % 2 == 0){
+    if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
         return 31;
-    }
-    else if((month - 1) == 1){
+    if(month == 2){
         if(is_leap_year(year))   return 29;
         else    return 28;
     }
-    else{
+    else
         return 30;
-    }
 }
 
 int is_leap_year(int year){
